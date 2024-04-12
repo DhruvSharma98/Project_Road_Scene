@@ -77,7 +77,7 @@ def get_video_instructions_from_coordinates(coordinates, valhalla_instructions):
             instruction_count += 1
 
         else:
-            coordinate["video_instruction"] = None
+            coordinate["video_instruction"] = instruction_str
             coordinate["direction_command"] = "Stay center"
 
     coordinates[-1]["video_instruction"] = instruction_info["instruction"]
